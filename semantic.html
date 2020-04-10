@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>semantic</title>
+  </head>
+  <body>
+    <b>굵은</b> vs <strong>중요한</strong><br />
+    <i>기울어진</i> vs <em>강조하는</em><br />
+    <u>밑줄친</u> vs <ins>새롭게 추가된</ins><br />
+    <s>중간선이 있는</s> vs <del>삭제된</del>
+  </body>
+</html>
+
+<body>
+  1. 섹션
+  <header></header>
+  <nav></nav>
+  1.섹션
+  <section>
+    2. 섹션
+    <header></header>
+    <article></article>
+    1.섹션
+    <footer></footer>
+  </section>
+  <aside></aside>
+  3. 섹션
+  <footer></footer>
+</body>
+
+(문서의 아웃라인) -> 1.섹션 1.섹션 2.섹션 1.섹션 3.섹션 헤딩으로 섹션의 이름을
+만들어줄 수 있다.
+
+<h1>예제</h1>
+<section>
+  <h2>멋진 섹션</h2>
+</section>
+<article>
+  <h2>아주 좋은 글</h2>
+</article>
+<section>
+  여긴 헤딩이 없어요
+</section>
+
+1. 예제 1. 멋진 섹션 2. 아주 좋은 글 3. Untitled Section
+
+<h1>책 팝니다</h1>
+<section>
+  <h1>중고책</h1>
+  <h2>html 공부하기</h2>
+  <h2>css 공부하기</h2>
+  <h2>연애, 할 수 있다</h2>
+</section>
+
+1. 책 팝니다 1. 중고책 1.HTML 공부하기 2.css 공부하기 3.연애, 할 수 있다 -> 한
+섹션 안에 헤딩이 여러 개일 때는, 헤딩이 섹션을 만든다
+
+<h1>물건 팝니다</h1>
+<h2>쓰던 물건</h2>
+<article>
+  <h3>볼펜</h3>
+  <p>아주 잘 나와요</p>
+</article>
+<article>
+  <h3>지갑</h3>
+  <p>중후한 멋이 있어요</p>
+</article>
+
+1. 물건 팝니다 1. 쓰던 물건 2. 볼펜 3. 지갑
+
+<h1>책 팝니다</h1>
+<blockquote>
+  -> 섹셔닝 루츠(body)안에 또 다른 섹셔닝 루츠가 있으면 그 안의 내용은
+  아웃라인에 포함시키지 않는다
+  <h1>중고책</h1>
+  <h2>HTML 공부하기</h2>
+  <h2>CSS 공부하기</h2>
+  <h2>연애, 할 수 있다</h2>
+</blockquote>
+
+1. 책 팝니다 -> 아웃라인을 도와주는 툴 : html5 outliner -> 브라우저 확장
+프로그램 왜? follow the standard, break the rule : 표준은 따르고, 관습은
+갱신해라 w3c 스펙, 표준을 따라서 문서들을 만들어주고 그것이 웹의 문화가 된다면
+그게 적용된 보조기기가 나올 수 있는 것이고 검색 엔진도 그걸 반영해서 검색결과에
+반영할 수도있는것 생각지 못한 더 좋은 기능들이 만들어지고 웹이 더 풍성해질 수
+있다 validator article vs section article : 내용이 각기 독립적이고 홀로 설 수
+있는 내용 ex) 블로그 글, 포럼 글. 뉴스기사
+
+<div>
+  : 이미 너무나도 잘 알고 있고 가장 많이 이용하는 통상적인 컨텐츠 그릇입니다. 이
+  이상 어떠한 의미론적인 뜻도 내포하고 있지 않으며, 단지 컨텐츠의 흐름만
+  형성하는 요소일 뿐입니다.
+  <section>
+    : 통상적인 문서 또는 어플리케이션의 섹션(구획)을 형성하는 요소로, 대부분
+    항상 heading 요소들과(가끔은 heading 요소들을
+    <header>
+      로 감싸기도 한다), 그리고 때때로
+      <footer>
+        요소와도 함께 사용되기도 합니다. 홈페이지의 뉴스 부분처럼 페이지의 주요
+        부분인, 긴 글의 세부사항과 같은 관련 컨텐츠의 묶음, 또는 탭 키 사용을
+        요하는 인터페이스를 가진 웹 어플리케이션에서의 페이지의 묶음 단위라
+        생각하면 됩니다.
+        <article>
+          : 문서나 사이트에서 독립적인 부분입니다. 이 부분을 다른 곳에
+          옮기더라도 분리되어 지고, 또 의미가 통해야 합니다. 웹 블로그에서의 글,
+          포럼에서의 포스팅, 또는 코멘트를 예로 들 수 있습니다.
+          <section>
+            요소처럼, heading 요소를 반드시 가져야 하며, 그리고 가끔은
+            <header>
+              요소와,
+              <footer>
+                요소를 포함하기도 합니다 출처: https://webclub.tistory.com/268
+                [Web Club]
+              </footer>
+            </header>
+          </section>
+        </article>
+      </footer>
+    </header>
+  </section>
+</div>
